@@ -12,7 +12,6 @@ zig fetch --save git+https://github.com/Tired-Fox/dotenvy#{commit,branch,tag}
 // build.zig
 
 pub fn build(b: *std.Build) void {
-  // ...
   const open = b.dependency("dotenvy", .{}).module("dotenvy")
 
   const exe_mod = b.createModule(.{
